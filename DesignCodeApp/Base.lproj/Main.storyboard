@@ -21,11 +21,11 @@
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="xef-TH-8rz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTn-T6-fYj" userLabel="Hero View">
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTn-T6-fYj" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
                                         <subviews>
                                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" insetsLayoutMarginsFromSafeArea="NO" image="Home" translatesAutoresizingMaskIntoConstraints="NO" id="9ve-Fw-DTE">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
+                                                <rect key="frame" x="0.0" y="-50" width="375" height="502"/>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Learn to design &amp; code for iOS 11" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9S-RO-poz">
                                                 <rect key="frame" x="38" y="106" width="160" height="172"/>
@@ -37,7 +37,7 @@
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="x5T-9k-8P1">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" image="Art-iPhoneX" translatesAutoresizingMaskIntoConstraints="NO" id="x5T-9k-8P1">
                                                 <rect key="frame" x="202" y="45" width="123" height="319"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="123" id="a0j-dV-Y1v"/>
@@ -244,7 +244,7 @@
                                             <constraint firstItem="S9S-RO-poz" firstAttribute="centerY" secondItem="QTn-T6-fYj" secondAttribute="centerY" constant="-34" id="iu5-Lm-M2b"/>
                                             <constraint firstItem="x5T-9k-8P1" firstAttribute="leading" secondItem="S9S-RO-poz" secondAttribute="trailing" constant="4" id="jNp-gI-kzo"/>
                                             <constraint firstItem="x5T-9k-8P1" firstAttribute="centerY" secondItem="S9S-RO-poz" secondAttribute="centerY" constant="12.5" id="oNM-0z-tb6"/>
-                                            <constraint firstItem="9ve-Fw-DTE" firstAttribute="top" secondItem="QTn-T6-fYj" secondAttribute="top" id="puf-WD-5Sb"/>
+                                            <constraint firstItem="9ve-Fw-DTE" firstAttribute="top" secondItem="QTn-T6-fYj" secondAttribute="top" constant="-50" id="puf-WD-5Sb"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wcn-Ix-Lxl" userLabel="Book View">
@@ -348,8 +348,12 @@
                     </view>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
+                        <outlet property="backgroundImageView" destination="9ve-Fw-DTE" id="6Ty-g7-kKr"/>
+                        <outlet property="bookView" destination="wcn-Ix-Lxl" id="jn6-SU-cr7"/>
                         <outlet property="deviceImageView" destination="x5T-9k-8P1" id="vqh-yV-wNE"/>
-                        <outlet property="playVisualView" destination="Jzk-QR-Hdv" id="s80-It-PaH"/>
+                        <outlet property="heroView" destination="QTn-T6-fYj" id="6rm-LN-5r0"/>
+                        <outlet property="playVisualEffectView" destination="Jzk-QR-Hdv" id="SDe-ck-ww1"/>
+                        <outlet property="scrollView" destination="xef-TH-8rz" id="Bwl-LV-Yut"/>
                         <outlet property="titleLabel" destination="S9S-RO-poz" id="MSS-eX-b3n"/>
                     </connections>
                 </viewController>

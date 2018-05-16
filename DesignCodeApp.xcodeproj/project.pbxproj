@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DBD7766520ABDFAE0091E76C /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7766420ABDFAE0091E76C /* SectionViewController.swift */; };
 		DBE1C8B12097E3CD00952F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1C8B02097E3CD00952F7A /* AppDelegate.swift */; };
 		DBE1C8B32097E3CD00952F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1C8B22097E3CD00952F7A /* ViewController.swift */; };
 		DBE1C8B62097E3CD00952F7A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE1C8B42097E3CD00952F7A /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DBD7766420ABDFAE0091E76C /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		DBE1C8AD2097E3CD00952F7A /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE1C8B02097E3CD00952F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DBE1C8B22097E3CD00952F7A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +60,7 @@
 			children = (
 				DBE1C8B02097E3CD00952F7A /* AppDelegate.swift */,
 				DBE1C8B22097E3CD00952F7A /* ViewController.swift */,
+				DBD7766420ABDFAE0091E76C /* SectionViewController.swift */,
 				DBE1C8B42097E3CD00952F7A /* Main.storyboard */,
 				DBE1C8BA2097E3CE00952F7A /* Assets.xcassets */,
 				DBE1C8BC2097E3CE00952F7A /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				DBE1C8B32097E3CD00952F7A /* ViewController.swift in Sources */,
 				DBE1C8B12097E3CD00952F7A /* AppDelegate.swift in Sources */,
+				DBD7766520ABDFAE0091E76C /* SectionViewController.swift in Sources */,
 				DBE1C8B92097E3CD00952F7A /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		DB170ADE20B50A0F004EE37C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB170ADD20B50A0F004EE37C /* Data.swift */; };
 		DB170AE020B50A94004EE37C /* SectionCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB170ADF20B50A94004EE37C /* SectionCollectionViewCell.swift */; };
+		DB64501B20B8EE3000A7B1F8 /* TestimonialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64501A20B8EE3000A7B1F8 /* TestimonialViewController.swift */; };
+		DB64501D20B8EE5300A7B1F8 /* TestimonialCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB64501C20B8EE5300A7B1F8 /* TestimonialCollectionViewCell.swift */; };
 		DBD7766520ABDFAE0091E76C /* SectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBD7766420ABDFAE0091E76C /* SectionViewController.swift */; };
 		DBE1C8B12097E3CD00952F7A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1C8B02097E3CD00952F7A /* AppDelegate.swift */; };
 		DBE1C8B32097E3CD00952F7A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1C8B22097E3CD00952F7A /* ViewController.swift */; };
@@ -21,6 +23,8 @@
 /* Begin PBXFileReference section */
 		DB170ADD20B50A0F004EE37C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		DB170ADF20B50A94004EE37C /* SectionCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionCollectionViewCell.swift; sourceTree = "<group>"; };
+		DB64501A20B8EE3000A7B1F8 /* TestimonialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialViewController.swift; sourceTree = "<group>"; };
+		DB64501C20B8EE5300A7B1F8 /* TestimonialCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCollectionViewCell.swift; sourceTree = "<group>"; };
 		DBD7766420ABDFAE0091E76C /* SectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionViewController.swift; sourceTree = "<group>"; };
 		DBE1C8AD2097E3CD00952F7A /* DesignCodeApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignCodeApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBE1C8B02097E3CD00952F7A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -65,6 +69,8 @@
 				DBE1C8B02097E3CD00952F7A /* AppDelegate.swift */,
 				DBE1C8B22097E3CD00952F7A /* ViewController.swift */,
 				DBD7766420ABDFAE0091E76C /* SectionViewController.swift */,
+				DB64501A20B8EE3000A7B1F8 /* TestimonialViewController.swift */,
+				DB64501C20B8EE5300A7B1F8 /* TestimonialCollectionViewCell.swift */,
 				DB170ADF20B50A94004EE37C /* SectionCollectionViewCell.swift */,
 				DB170ADD20B50A0F004EE37C /* Data.swift */,
 				DBE1C8B42097E3CD00952F7A /* Main.storyboard */,
@@ -151,7 +157,9 @@
 				DB170ADE20B50A0F004EE37C /* Data.swift in Sources */,
 				DBE1C8B12097E3CD00952F7A /* AppDelegate.swift in Sources */,
 				DBD7766520ABDFAE0091E76C /* SectionViewController.swift in Sources */,
+				DB64501B20B8EE3000A7B1F8 /* TestimonialViewController.swift in Sources */,
 				DB170AE020B50A94004EE37C /* SectionCollectionViewCell.swift in Sources */,
+				DB64501D20B8EE5300A7B1F8 /* TestimonialCollectionViewCell.swift in Sources */,
 				DBE1C8B92097E3CD00952F7A /* DesignCodeApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

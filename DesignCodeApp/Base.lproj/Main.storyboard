@@ -416,7 +416,7 @@
                                         <viewLayoutGuide key="safeArea" id="AFk-7Z-1S0"/>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-jP-XSN">
-                                        <rect key="frame" x="0.0" y="1180" width="375" height="524"/>
+                                        <rect key="frame" x="0.0" y="1200" width="375" height="524"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="524" id="Q6d-02-QSg"/>
                                         </constraints>
@@ -452,6 +452,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cL7-0Z-Wry"/>
                     </view>
+                    <navigationItem key="navigationItem" id="jpr-VY-xXB"/>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
                         <outlet property="backgroundImageView" destination="9ve-Fw-DTE" id="6Ty-g7-kKr"/>
@@ -467,7 +468,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ7-Fp-CPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1565.5999999999999" y="319.95073891625617"/>
+            <point key="canvasLocation" x="-626.39999999999998" y="319.34032983508246"/>
         </scene>
         <!--Section View Controller-->
         <scene sceneID="tvx-uX-9Qe">
@@ -622,7 +623,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dq2-b8-2vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-788" y="-280"/>
+            <point key="canvasLocation" x="151.19999999999999" y="-280.20989505247377"/>
         </scene>
         <!--Testimonial View Controller-->
         <scene sceneID="zh2-57-uPb">
@@ -829,7 +830,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePW-rz-5n2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-788" y="726"/>
+            <point key="canvasLocation" x="151.19999999999999" y="725.93703148425789"/>
         </scene>
     </scenes>
     <resources>

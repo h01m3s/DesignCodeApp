@@ -416,7 +416,7 @@
                                         <viewLayoutGuide key="safeArea" id="AFk-7Z-1S0"/>
                                     </view>
                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6g9-jP-XSN">
-                                        <rect key="frame" x="0.0" y="1200" width="375" height="524"/>
+                                        <rect key="frame" x="0.0" y="1180" width="375" height="524"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="524" id="Q6d-02-QSg"/>
                                         </constraints>

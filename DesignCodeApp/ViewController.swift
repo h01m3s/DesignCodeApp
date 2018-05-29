@@ -69,13 +69,13 @@ class ViewController: UIViewController {
         statusBar.backgroundColor = color
     }
     
-    func addBlurStatusBar() {
-        let statusBarHeight = UIApplication.shared.statusBarFrame.height
-        let blur = UIBlurEffect(style: .dark)
-        let blurStatusBar = UIVisualEffectView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: statusBarHeight))
-        blurStatusBar.effect = blur
-        view.addSubview(blurStatusBar)
-    }
+//    func addBlurStatusBar() {
+//        let statusBarHeight = UIApplication.shared.statusBarFrame.height
+//        let blur = UIBlurEffect(style: .dark)
+//        let blurStatusBar = UIVisualEffectView(frame: CGRect(x: 0, y: 0, width: view.bounds.width, height: statusBarHeight))
+//        blurStatusBar.effect = blur
+//        view.addSubview(blurStatusBar)
+//    }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToSection" {

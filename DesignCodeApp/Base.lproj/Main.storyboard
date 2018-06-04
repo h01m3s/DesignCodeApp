@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="IIx-p2-Ugl">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gpd-qO-8KJ">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,16 +10,16 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Home-->
         <scene sceneID="Eni-oJ-88l">
             <objects>
                 <viewController id="IIx-p2-Ugl" customClass="ViewController" customModule="DesignCodeApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2sI-WY-z8E">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="1951"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" contentInsetAdjustmentBehavior="never" translatesAutoresizingMaskIntoConstraints="NO" id="xef-TH-8rz">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="2000"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1951"/>
                                 <subviews>
                                     <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QTn-T6-fYj" userLabel="Hero View">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="452"/>
@@ -452,6 +452,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="cL7-0Z-Wry"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="TabBar/TabBar-Home" selectedImage="TabBar/TabBar-Home-Active" id="64R-Ol-kbf"/>
                     <navigationItem key="navigationItem" id="jpr-VY-xXB"/>
                     <size key="freeformSize" width="375" height="2000"/>
                     <connections>
@@ -468,7 +469,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XZ7-Fp-CPO" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-626.39999999999998" y="319.34032983508246"/>
+            <point key="canvasLocation" x="312.80000000000001" y="319.34032983508246"/>
         </scene>
         <!--Section View Controller-->
         <scene sceneID="tvx-uX-9Qe">
@@ -612,6 +613,7 @@
                             <constraint firstItem="AF2-tn-QOv" firstAttribute="top" secondItem="e9C-Du-opr" secondAttribute="top" id="rco-0i-BLt"/>
                             <constraint firstAttribute="trailing" secondItem="AF2-tn-QOv" secondAttribute="trailing" id="uYR-aQ-NS3"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="992-37-OXE"/>
                     </view>
                     <connections>
                         <outlet property="bodyLabel" destination="JH5-ta-oFr" id="l9a-Ej-4vC"/>
@@ -623,7 +625,97 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dq2-b8-2vK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151.19999999999999" y="-280.20989505247377"/>
+            <point key="canvasLocation" x="1090.4000000000001" y="-280.20989505247377"/>
+        </scene>
+        <!--Chapter-->
+        <scene sceneID="hBn-xh-qf1">
+            <objects>
+                <viewController id="RjC-5l-rca" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VgI-uR-ytl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="htf-UN-iOU"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Chapter" image="TabBar/Tabbar-Chapters" selectedImage="TabBar/TabBar-Chapters-Active" id="wz3-9c-Wgy"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LlE-wm-1FL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1776.8" y="-280.20989505247377"/>
+        </scene>
+        <!--Bookmarks-->
+        <scene sceneID="f2A-La-FWV">
+            <objects>
+                <tableViewController id="pVb-nc-yWv" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="cbP-H5-qoK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="E4Z-2R-2Mj">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="E4Z-2R-2Mj" id="Nyv-0q-Qgs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="pVb-nc-yWv" id="qCE-ss-moL"/>
+                            <outlet property="delegate" destination="pVb-nc-yWv" id="DAI-pf-mS8"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Bookmarks" image="TabBar/TabBar-Bookmarks" selectedImage="TabBar/TabBar-Bookmarks-Active" id="U9q-GC-Jwo"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="59R-Fh-alX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2448.8000000000002" y="-280.20989505247377"/>
+        </scene>
+        <!--Exercises-->
+        <scene sceneID="OJJ-oN-9Vr">
+            <objects>
+                <tableViewController id="dQO-Vq-JqW" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Vbv-37-P3C">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Fye-Bd-9XF">
+                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fye-Bd-9XF" id="Q2W-fX-48t">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="dQO-Vq-JqW" id="iCV-BW-gFS"/>
+                            <outlet property="delegate" destination="dQO-Vq-JqW" id="F1o-VS-Yd0"/>
+                        </connections>
+                    </tableView>
+                    <tabBarItem key="tabBarItem" title="Exercises" image="TabBar/TabBar-Exercises" selectedImage="TabBar/TabBar-Exercises-Active" id="Jg1-Nl-hfz"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YG9-2A-6S9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3119.1999999999998" y="-280.20989505247377"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="zQK-d0-vbz">
+            <objects>
+                <viewController id="p4v-VC-1zV" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VsC-Vx-Jxi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="LUZ-D9-Uyr"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="TabBar/TabBar-More" selectedImage="TabBar/TabBar-More-Active" id="2AI-2V-jlS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jhh-vt-58c" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3783.1999999999998" y="-280.20989505247377"/>
         </scene>
         <!--Testimonial View Controller-->
         <scene sceneID="zh2-57-uPb">
@@ -823,6 +915,7 @@
                             <constraint firstItem="fz9-sa-zcw" firstAttribute="leading" secondItem="XNZ-iA-YWT" secondAttribute="leading" id="MS5-4A-b16"/>
                             <constraint firstItem="fz9-sa-zcw" firstAttribute="top" secondItem="XNZ-iA-YWT" secondAttribute="top" id="hcA-6e-ykp"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="85n-Ef-zRt"/>
                     </view>
                     <connections>
                         <outlet property="testmonialCollectionView" destination="ruI-ic-ZRq" id="ppV-EZ-1gK"/>
@@ -830,7 +923,28 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ePW-rz-5n2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="151.19999999999999" y="725.93703148425789"/>
+            <point key="canvasLocation" x="1090.4000000000001" y="725.93703148425789"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="bbM-87-jXz">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="gpd-qO-8KJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="ymR-gg-YPv">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="IIx-p2-Ugl" kind="relationship" relationship="viewControllers" id="ih5-hY-kQ5"/>
+                        <segue destination="RjC-5l-rca" kind="relationship" relationship="viewControllers" id="ZgM-XH-NwD"/>
+                        <segue destination="pVb-nc-yWv" kind="relationship" relationship="viewControllers" id="y95-em-QBm"/>
+                        <segue destination="dQO-Vq-JqW" kind="relationship" relationship="viewControllers" id="Cn3-WL-r4V"/>
+                        <segue destination="p4v-VC-1zV" kind="relationship" relationship="viewControllers" id="72q-ou-eh7"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="U9f-7f-aSW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1777" y="-1170"/>
         </scene>
     </scenes>
     <resources>
@@ -844,6 +958,16 @@
         <image name="Logo-Stripe" width="81" height="33"/>
         <image name="Quote-Begin" width="23" height="18"/>
         <image name="Quote-End" width="12" height="9"/>
+        <image name="TabBar/TabBar-Bookmarks" width="20" height="26"/>
+        <image name="TabBar/TabBar-Bookmarks-Active" width="20" height="26"/>
+        <image name="TabBar/TabBar-Chapters-Active" width="28" height="24"/>
+        <image name="TabBar/TabBar-Exercises" width="30" height="24"/>
+        <image name="TabBar/TabBar-Exercises-Active" width="30" height="24"/>
+        <image name="TabBar/TabBar-Home" width="24" height="25"/>
+        <image name="TabBar/TabBar-Home-Active" width="24" height="25"/>
+        <image name="TabBar/TabBar-More" width="30" height="8"/>
+        <image name="TabBar/TabBar-More-Active" width="30" height="8"/>
+        <image name="TabBar/Tabbar-Chapters" width="28" height="24"/>
         <image name="ios11" width="2880" height="1600"/>
     </resources>
 </document>

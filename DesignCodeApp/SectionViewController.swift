@@ -30,6 +30,10 @@ class SectionViewController: UIViewController {
         progressLabel.text = "\(indexPath.row + 1) / \(sections.count)"
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     @IBAction func closeButtonTapped(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }

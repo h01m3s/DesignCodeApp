@@ -8,10 +8,6 @@
 
 import UIKit
 
-class Data: NSObject {
-
-}
-
 let allBookmarks = [
     [
         "type": "code",
@@ -39,7 +35,7 @@ let allBookmarks = [
         "chapter": "2",
         "section": "Status Bar",
         "part": "Setting Up the Basics",
-        "content": "We need a Status Bar for the top of the screen. You can find the Status Bar in the Insert menu at the Toolbar. If you've installed Sketch Runner, you can search it easily. Go to Plugins > Runner > Run… or press Command + ' (apostrophe) to activate Sketch Runner. Select the Insert tab and type keyword "status bar black" and double-click the Symbol and then, place it in the Artboard."
+        "content": "We need a Status Bar for the top of the screen. You can find the Status Bar in the Insert menu at the Toolbar. If you've installed Sketch Runner, you can search it easily. Go to Plugins > Runner > Run… or press Command + ' (apostrophe) to activate Sketch Runner. Select the Insert tab and type keyword \"status bar black\" and double-click the Symbol and then, place it in the Artboard."
     ],
     [
         "type": "image",

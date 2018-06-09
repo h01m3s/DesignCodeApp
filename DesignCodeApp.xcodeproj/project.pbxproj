@@ -20,6 +20,7 @@
 		DBE1C8BB2097E3CE00952F7A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE1C8BA2097E3CE00952F7A /* Assets.xcassets */; };
 		DBE1C8BE2097E3CE00952F7A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE1C8BC2097E3CE00952F7A /* LaunchScreen.storyboard */; };
 		DBE1D3DF20CB774700EF53D2 /* BookmarksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1D3DE20CB774700EF53D2 /* BookmarksTableViewController.swift */; };
+		DBE1D3E120CB84BD00EF53D2 /* BookmarkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBE1D3E020CB84BD00EF53D2 /* BookmarkTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		DBE1C8BD2097E3CE00952F7A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DBE1C8BF2097E3CE00952F7A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DBE1D3DE20CB774700EF53D2 /* BookmarksTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksTableViewController.swift; sourceTree = "<group>"; };
+		DBE1D3E020CB84BD00EF53D2 /* BookmarkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 				DB64501C20B8EE5300A7B1F8 /* TestimonialCollectionViewCell.swift */,
 				DB170ADF20B50A94004EE37C /* SectionCollectionViewCell.swift */,
 				DBE1D3DE20CB774700EF53D2 /* BookmarksTableViewController.swift */,
+				DBE1D3E020CB84BD00EF53D2 /* BookmarkTableViewCell.swift */,
 				DB170ADD20B50A0F004EE37C /* Data.swift */,
 				DBE1C8B42097E3CD00952F7A /* Main.storyboard */,
 				DBE1C8BA2097E3CE00952F7A /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 				DBE1D3DF20CB774700EF53D2 /* BookmarksTableViewController.swift in Sources */,
 				DB170ADE20B50A0F004EE37C /* Data.swift in Sources */,
 				DBE1C8B12097E3CD00952F7A /* AppDelegate.swift in Sources */,
+				DBE1D3E120CB84BD00EF53D2 /* BookmarkTableViewCell.swift in Sources */,
 				DBD7766520ABDFAE0091E76C /* SectionViewController.swift in Sources */,
 				DB64501B20B8EE3000A7B1F8 /* TestimonialViewController.swift in Sources */,
 				DB170AE020B50A94004EE37C /* SectionCollectionViewCell.swift in Sources */,

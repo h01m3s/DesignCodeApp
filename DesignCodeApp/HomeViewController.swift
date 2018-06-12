@@ -21,6 +21,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var chapterCollectionView: UICollectionView!
     var isStatusBarHidden = false
     
+    let presentSectionViewController = PresentSectionViewController()
+    
     @IBAction func playButtonTapped(_ sender: Any) {
         let urlString = "https://player.vimeo.com/external/235468301.hd.mp4?s=e852004d6a46ce569fcf6ef02a7d291ea581358e&profile_id=175"
         let url = URL(string: urlString)
@@ -81,12 +83,19 @@ class HomeViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "HomeToSection" {
-            let toViewController = segue.destination as! SectionViewController
+            let destination = segue.destination as! SectionViewController
             let indexPath = sender as! IndexPath
             let section = sections[indexPath.row]
-            toViewController.section = section
-            toViewController.sections = sections
-            toViewController.indexPath = indexPath
+            destination.section = section
+            destination.sections = sections
+            destination.indexPath = indexPath
+            destination.transitioningDelegate = self
+            
+            let attributes = chapterCollectionView.layoutAttributesForItem(at: indexPath)!
+            let cellFrame = chapterCollectionView.convert(attributes.frame, to: view)
+            
+            presentSectionViewController.cellFrame = cellFrame
+            presentSectionViewController.cellTransform = animateCell(cellFrame: cellFrame)
             
             isStatusBarHidden = true
             UIView.animate(withDuration: 0.5, animations: {
@@ -103,6 +112,14 @@ class HomeViewController: UIViewController {
         }
     }
 
+}
+
+extension HomeViewController: UIViewControllerTransitioningDelegate {
+    
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return presentSectionViewController
+    }
+    
 }
 
 extension HomeViewController: UICollectionViewDelegate, UICollectionViewDataSource {
